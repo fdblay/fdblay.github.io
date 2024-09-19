@@ -1,3 +1,7 @@
+body p {
+    color: #6e6e6e;
+}
+
 header {
     /* width: 100%; */
     background-image: url('../bg_images_webdev/bg4.jpg');
@@ -5,8 +9,8 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    
-    
+
+
 }
 
 /* .bg-image {
@@ -25,6 +29,7 @@ header {
     width: 20%;
     /* position: fixed; */
 }
+
 .nav-bar a {
     float: left;
     color: white;
@@ -32,14 +37,17 @@ header {
     padding: 14px 16px;
     text-decoration: none;
 }
+
 .nav-bar h1 {
     color: wheat;
     font-size: 40px;
 }
+
 .dropdown {
     float: left;
     overflow: hidden;
 }
+
 .dropdown .dropbtn {
     font-size: 16px;
     border: none;
@@ -50,15 +58,18 @@ header {
     font-family: inherit;
     margin: 0;
 }
-.nav-bar a:hover, .dropdown:hover .dropbtn {
+
+.nav-bar a:hover,
+.dropdown:hover .dropbtn {
     background-color: teal;
 }
+
 .dropdown-items {
     display: none;
     position: absolute;
     background-color: #f9f9f980;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
@@ -70,9 +81,11 @@ header {
     display: block;
     text-align: left;
 }
+
 .dropdown-items a:hover {
     background-color: #add;
 }
+
 .dropdown:hover .dropdown-items {
     display: block;
 }
@@ -87,9 +100,11 @@ header {
 .page-items h3 {
     font-size: 23px;
 }
+
 .page-items h1 {
     font-size: 65px;
 }
+
 .page-items h5 {
     /* margin-left: 40%;
     margin-right: 40%; */
@@ -98,6 +113,7 @@ header {
     border-left: 1px solid teal;
     border-right: 1px solid teal;
 }
+
 .speciality {
     /* width: 50%; */
     display: flex;
@@ -108,12 +124,143 @@ header {
 
 .page-items button {
     margin-bottom: 8rem;
-    background-color: #f8f8f860;    
+    background-color: #f8f8f860;
     border: 2px solid #6e6e6e;
     padding: 12px;
     justify-content: center;
 }
 
 .fafa-icons i {
-   padding: 10px;
+    padding: 10px;
+    /* color: #F45722; */
+    color: white;
+}
+
+.hero-sect {
+    border: 2px dashed #F45722;
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.about {
+    padding-top: 5rem;
+    text-align: center;
+}
+
+.about h2 {}
+
+.about p {
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+
+}
+
+
+.profile-skills {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+}
+
+.profile-skills h4 {
+    margin-bottom: 1rem;
+    border-left: 1.5px solid #F45722;
+    padding-left: 3px;
+}
+
+.profile-skills p {
+    width: 70%;
+    padding-bottom: 20px;
+}
+
+.profile-buts {
+    width: 50%;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* row-gap: 10px; */
+    margin: auto;
+
+}
+
+.but1 {
+    margin-right: 10px;
+    margin-left: 0;
+    padding: 10px 30px;
+    /* font-family: ; */
+}
+
+.but2 {
+    padding: 10px 40px;
+}
+
+.resume {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.resume p {
+    margin: auto;
+    width: 50%;
+}
+
+.experience {
+    border: 2px dashed #F45722;
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+    padding-left: 20px;
+}
+
+.experience p {
+    /* width: 50%; */
+}
+
+.experience h2 {
+    text-align: center;
+    color: #F45722;
+}
+
+.work {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* margin: auto; */
+    /* text-align: center; */
+    /* row-gap: 20px;  */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 5px;
+
+}
+
+.work p {
+    /* width: 50%; */
+}
+
+
+.education1 {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 5px;
+}
+
+.education2 {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 5px;
+    padding-bottom: 5rem;
 }
