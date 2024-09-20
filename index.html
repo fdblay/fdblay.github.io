@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="./scripts.js" defer></script>
     <link rel="stylesheet" href="./CSS/reset.css">
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -23,8 +24,8 @@
                 </button>
                 <div class="dropdown-items">
                     <a href="#">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Resume</a>
+                    <a href="#hero-sect">About</a>
+                    <a href="#experience">Resume</a>
                     <a href="#">Portfolio</a>
                     <a href="#">Services</a>
                     <a href="#">Contact</a>
@@ -58,7 +59,7 @@
 
     </header>
 
-    <section class="hero-sect">
+    <section class="hero-sect" id="hero-sect">
 
         <div class="about">
             <h4>ABOUT</h4>
@@ -110,7 +111,7 @@
                     <progress id="file" value="75" max="100"> 75% </progress><br>
                 </div><br>
                 <div>
-                    <img src="./bg_images_webdev/js.png" style="width: 10%; border-radius: 50px;" alt="">
+                    <img src="./bg_images_webdev/js.png" style="width: 10%;" alt="">
                     <h5>JAVASCRIPT</h5>
                     <progress id="file" value="70" max="100"> 75% </progress><br>
                 </div>
@@ -126,9 +127,10 @@
                 <button class="but2">DOWNLOAD CV</button>
             </a>
         </div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     </section>
 
-    <section class="experience">
+    <section class="experience" id="experience">
         <div class="resume">
             <h4>ABOUT</h4>
             <h2>Let me introduce myself.</h2>
@@ -181,7 +183,7 @@
                 <p></p>
             </div>
         </div>
-
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     </section>
 
     <section class="portfolio">
