@@ -137,10 +137,11 @@ header {
 }
 
 .hero-sect {
-    border: 2px dashed #F45722;
+    border-bottom: 2px dashed #F45722;
     width: 80%;
     display: block;
     margin: auto;
+    padding-left: 20px;
 }
 
 .about {
@@ -209,11 +210,13 @@ header {
 }
 
 .experience {
-    border: 2px dashed #F45722;
+    border-right: 2px dashed #420502;
     width: 80%;
     margin: auto;
     margin-top: 2rem;
     padding-left: 20px;
+    background-color: #EBEBEB;
+
 }
 
 .experience p {
@@ -225,6 +228,9 @@ header {
     color: #F45722;
 }
 
+.experience i {
+    
+}
 .work {
     /* display: flex;
     flex-direction: row;
@@ -263,4 +269,60 @@ header {
     grid-template-rows: 1fr;
     grid-column-gap: 5px;
     padding-bottom: 5rem;
+}
+.end {
+    width: 100%;
+    background-color: #292725;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+.end p {
+    color: wheat;
+
+}
+.end .fafa-icons {
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    padding-top: 1rem;
+    border-top: 1px dashed #F45722;
+    /* border-right: 1px solid teal;
+    /* border-left: 1px solid teal; */
+} 
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 1rem;
+}
+.contact p {
+    /* border-left: 1px solid teal;
+    border-right: 1px solid teal; */
+    padding: 2px;
+    padding-top: 5px;
+}
+.contact h4 {
+    padding-top: 4px;
+    border-left: 1px dashed #F45722;
+    border-right: 1px dashed teal;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+.copyright p {
+    border-top: 1px dashed teal;
+    border-bottom: 1px dashed teal;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#p2 {
+    margin-left: 200px;
 }
