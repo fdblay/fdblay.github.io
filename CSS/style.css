@@ -128,11 +128,12 @@ header {
 
 .page-items button {
     margin-bottom: 8rem;
-    background-color: #f8f8f860;
+    background-color: #00266C;
     border: 2px solid #6e6e6e;
     padding: 12px;
     justify-content: center;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .fafa-icons i {
@@ -202,11 +203,13 @@ header {
     background-color: #29272520;
     border-radius: 8px;
     padding: 10px;
+    width: 50%;
 }
 .skills {
     /* background-color: #66999160; */
     border-radius: 8px;
     padding: 10px;
+    width: 50%;
 }
 
 .but1 {
@@ -219,6 +222,7 @@ header {
     border-radius: 5px;
     color: #00266C;
     font-weight: bold;
+    cursor: pointer;
 
 }
 
@@ -229,7 +233,7 @@ header {
     color: wheat;
     font-weight: bold;
     border-radius: 5px;
-
+    cursor: pointer;
 }
 
 .resume {
@@ -246,7 +250,9 @@ header {
 }
 
 .experience {
-    border-right: 2px dashed #420502;
+    /* border-right: 2px dashed #420502; */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     width: 80%;
     margin: auto;
     margin-top: 2rem;
@@ -261,7 +267,7 @@ header {
 
 .experience h2 {
     text-align: center;
-    color: #F45722;
+    color: ##00266C;
 }
 
 .experience i {
@@ -285,7 +291,9 @@ header {
     /* width: 50%; */
 }
 
-
+.edu {
+    color: #BC5C3A;
+}
 .education1 {
     /* display: flex;
     flex-direction: row;
