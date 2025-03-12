@@ -4,233 +4,393 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="./scripts.js" defer></script>
+    <title>Frederick Kumah - Backend Developer</title>
+    <meta name="description" content="Frederick Kumah - Backend Developer Portfolio. Specializing in JavaScript, Express.js, and web development.">
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" as="image" href="bg_images_webdev/bg4.jpg">
+    <link rel="preload" as="style" href="./CSS/style.css">
+    <link rel="preload" as="style" href="./CSS/reset.css">
+    
+    <!-- Styles -->
     <link rel="stylesheet" href="./CSS/reset.css">
     <link rel="stylesheet" href="./CSS/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </head>
 
 <body>
-    <header>
-        <!-- <div class="bg-image">
-            <img src="./bg_images_webdev/bg1.jpg" alt="background image">
-        </div> -->
-        <nav class="nav-bar">
-            <h1>Frederick</h1>
-            <div class="dropdown">
-                <button class="dropbtn">
-                    <i class="fa fa-light fa-bars" style="font-size:30px"></i>
-                </button>
-                <div class="dropdown-items">
-                    <a href="#">Home</a>
-                    <a href="#hero-sect">About</a>
-                    <a href="#experience">Resume</a>
-                    <a href="#">Portfolio</a>
-                    <a href="#">Services</a>
-                    <a href="#contact">Contact</a>
+    <nav class="nav-bar">
+        <div class="nav-logo">
+            <a href="#" class="logo">FK<span class="logo-dot">.</span></a>
+        </div>
+        <div class="nav-links">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#education" class="nav-link">Education</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <div class="theme-toggle">
+            <i class="fas fa-moon"></i>
+        </div>
+        <div class="mobile-menu">
+            <i class="fa fa-bars"></i>
+        </div>
+    </nav>
+
+    <header id="home">
+        <div class="particles-js" id="particles-js"></div>
+        <div class="hero-content">
+            <div data-aos="fade-up" data-aos-duration="1000">
+                <p class="intro-text">HELLO, WORLD!</p>
+                <h1 class="name">I'm <span class="highlight">Frederick</span> Akwetey <span class="highlight">Kumah</span></h1>
+                <div class="speciality">
+                    <div class="typing-container">
+                        <span class="typing-text"></span>
+                        <span class="cursor">|</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#about" class="cta-button primary">
+                        MORE ABOUT ME
+                        <i class="fa fa-angle-down"></i>
+                    </a>
+                    <a href="https://drive.google.com/uc?export=download&id=1oWrGgY658fnXohZ3EEvEmkm_Uiwv1uSo" class="cta-button secondary" download target="_blank">
+                        DOWNLOAD CV
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="https://twitter.com/your-handle" target="_blank" aria-label="Twitter" class="social-hover"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/frederick-kumah" target="_blank" aria-label="LinkedIn" class="social-hover"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/fdblay" target="_blank" aria-label="GitHub" class="social-hover"><i class="fab fa-github"></i></a>
                 </div>
             </div>
-
-
-        </nav>
-        <div class="page-items">
-            <h3>HELLO, WORLD!</h3>
-            <h1><span style="color: #E24B16;">I'</span>m <span style="color: #BC5C3A;">Frederick</span> Akwetey <span style="color: #BC5C3A;">Kumah</span>
-            </h1>
-            <div class="speciality">
-                <h5>BACK-END DEVELOPER</h5>
-                <h5>VIRTUAL ASSISTANT</h5>
-            </div>
-
-            <a href="#hero-sect" id="button1"><button style="color: wheat;">MORE ABOUT ME<i class="fa fa-angle-down"
-                        style="font-size:15px; padding-left: 8px;"></i></button></a><br>
-            <div class="fafa-icons">
-
-                <!-- <a href=""><i class="fa fa-instagram" style="font-size:24px"></i> </a> -->
-                <!-- <a href=""><i class="fa fa-facebook" style="font-size:24px"></i></a> -->
-                <a href=""><i class="fa fa-twitter" style="font-size:24px"></i></a>
-                <a href="https://www.linkedin.com/in/frederick-kumah" target="_blank"><i class="fa fa-linkedin" style="font-size:24px"></i></a>
-                <a href="https://github.com/fdblay" target="_blank"><i class="fa fa-github" style="font-size:24px"></i></a>
-
-            </div>
-
         </div>
-
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrows">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
     </header>
 
-    <section class="hero-sect" id="hero-sect">
-
-        <div class="about">
-            <h1>ABOUT</h1>
-            <h2>Let me introduce myself.</h2>
-            <p>Hello! I’m a junior backend developer on an exciting journey to pivot into tech from a different field. My curiosity about how things work behind the scenes brought me to backend development, where I’m currently diving into JavaScript and exploring data structures and algorithms. Although I’m new to tech, I bring a fresh perspective, adaptability, and a strong commitment to learning and improving every day. I’m looking forward to building solutions that make a difference and growing into a skilled backend developer.</p>
-        </div>
-        <div class="profile-skills">
-            <div class="profile">
-                <h4>PROFILE</h4>
-                <p>"Hi, I'm Frederick, a passionate and driven web developer specializing in the MERN stack. With a strong web development back-end technologies, I create dynamic and user-friendly applications that solve real-world problems. My focus is on building intuitive, responsive, and scalable solutions that elevate user experiences. Let's build something amazing together!"</p>
-
-                <div>
-                    <h5>FULL NAME:</h5>
-                    <p>Frederick Akwetey Kumah</p>
+    <section id="about" class="about-section">
+        <div class="container">
+            <div data-aos="fade-up" data-aos-duration="1000">
+                <h2 class="section-title">ABOUT ME</h2>
+                <div class="section-subtitle">Discover my story</div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Hello! I'm a junior backend developer on an exciting journey to pivot into tech. My curiosity about how things work behind the scenes brought me to backend development, where I'm currently specializing in JavaScript and exploring data structures and algorithms.</p>
+                        <p>Although I'm new to tech, I bring a fresh perspective, adaptability, and a strong commitment to learning and improving every day. I'm looking forward to building solutions that make a difference and growing into a skilled backend developer.</p>
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <h3>1+</h3>
+                                <p>Years of<br>Experience</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3>10+</h3>
+                                <p>Projects<br>Completed</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3>100%</h3>
+                                <p>Client<br>Satisfaction</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-container">
+                        <h3>Technical Skills</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item" data-aos="zoom-in" data-aos-delay="100">
+                                <i class="fab fa-html5"></i>
+                                <span>HTML5</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-aos="zoom-in" data-aos-delay="200">
+                                <i class="fab fa-css3-alt"></i>
+                                <span>CSS3</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-aos="zoom-in" data-aos-delay="300">
+                                <i class="fab fa-js"></i>
+                                <span>JavaScript</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 70%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-aos="zoom-in" data-aos-delay="400">
+                                <i class="fab fa-node-js"></i>
+                                <span>Express.js</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 65%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <h5>JOB:</h5>
-                    <p>Freelancer, Web (Back-end) Developer</p>
-                </div>
-                <div>
-                    <h5>EMAIL:</h5>
-                    <p>fdblay@gmail.com</p>
-                </div>
-                <div>
-                    <h5>WEBSITE:</h5>
-                    <p>fdblay.github.io</p>
-                </div>
-
             </div>
-
-            <div class="skills">
-                <h4>SKILLS</h4>
-                <p>As a backend developer, I have a solid foundation in web development with expertise in:
-                    <br>
-                    - <strong>JavaScript</strong>: Proficient in crafting dynamic and interactive web applications. <br>
-                    - <strong>HTML & CSS</strong>: Skilled in structuring and styling responsive, user-friendly web interfaces. <br>
-                    - <strong>Express.js</strong>: Experienced in building robust and scalable backend APIs for web applications. <br>
-                    - <strong>Git & GitHub</strong>: Proficient in version control, collaboration, and maintaining organized repositories. <br>
-                    These skills enable me to deliver well-rounded, efficient solutions for web development projects.</p>
-                <div>
-                    <img src="./bg_images_webdev/html.png" style="width: 10%;" alt="">
-                    <h5>HTML5</h5>
-                    <label for="file"></label>
-                    <progress id="file" value="85" max="100"> 75% </progress><br>
-                </div><br>
-                <div>
-                    <img src="./bg_images_webdev/css.png" style="width: 10%;" alt="">
-                    <h5>CSS</h5>
-                    <progress id="file" value="75" max="100"> 75% </progress><br>
-                </div><br>
-                <div>
-                    <img src="./bg_images_webdev/js.png" style="width: 10%;" alt="">
-                    <h5>JAVASCRIPT</h5>
-                    <progress id="file" value="70" max="100"> 75% </progress><br>
-                </div>
-            </div>
         </div>
-
-
-        <div class="profile-buts">
-            <a href="https://drive.google.com/file/d/1oWrGgY658fnXohZ3EEvEmkm_Uiwv1uSo/view?usp=sharing" target="_blank">
-                <button class="but1">HIRE ME</button>
-            </a>
-            <a href="https://drive.google.com/uc?export=download&id=1oWrGgY658fnXohZ3EEvEmkm_Uiwv1uSo" download target="_blank">
-                <button class="but2">DOWNLOAD CV</button>
-            </a>
-        </div>
-        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     </section>
 
-    <section class="experience" id="experience">
-        <!-- <div class="resume">
-            <h4>ABOUT</h4>
-            <h2>Let me introduce myself.</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur et ipsum quos fugit, dolor voluptatum
-                nesciunt nisi sequi quo, nostrum ab? Voluptatum eveniet consequuntur quidem aliquid quo aliquam
-                temporibus eius?</p>
-        </div> -->
-
-        <h2>WORK EXPERIENCE</h2><br>
-        <div class="work">
-            <div>
-                <h4>Web-Development Internship</h4>
-                <p>Oct, 2024 - Nov, 2024</p>
-            </div>
-            <div>
-                <a href=""><i class="fa fa-laptop" style="font-size:24px; color: #420502;"></i> </a>
-            </div>
-            <div>
-                <h4>Corextreme</h4>
-                <p></p>
-            </div>
-
-        </div><br>
-        <h2 class="edu">EDUCATION</h2><br>
-        <div class="education1">
-            <div>
-                <h4>Web Development Trainee</h4>
-                <p>Aug, 2024 - Nov, 2024</p>
-            </div>
-            <div>
-                <a href=""><i class="fa fa-institution" style="font-size:24px; color: #420502;"></i> </a>
-            </div>
-            <div>
-                <h5>MELTWATER ENTREPRENEURAL SCHOOL OF TECHNOLOGY</h5>
-                <p></p>
-            </div>
-        </div><br><br>
-
-        <div class="education2">
-            <div>
-                <h4>B.A Geography</h4>
-                <p>Aug, 2015 - May, 2019</p>
-            </div>
-            <div>
-                <a href=""><i class="fa fa-institution" style="font-size:24px; color: #420502;"></i> </a>
-            </div>
-            <div>
-                <h5>UNIVERSITY OF CAPE COAST</h5>
-                <p></p>
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <div data-aos="fade-up" data-aos-duration="1000">
+                <h2 class="section-title">EXPERIENCE</h2>
+                <div class="section-subtitle">My professional journey</div>
+                <div class="timeline">
+                    <div class="timeline-item" data-aos="fade-right">
+                        <div class="timeline-content">
+                            <div class="timeline-icon">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <h3>Web Development Internship</h3>
+                            <p class="timeline-date">Oct, 2024 - Nov, 2024</p>
+                            <h4>Corextreme</h4>
+                            <p class="timeline-description">Working on backend development using Express.js and MongoDB. Building RESTful APIs and implementing database solutions.</p>
+                            <div class="timeline-tags">
+                                <span>Express.js</span>
+                                <span>MongoDB</span>
+                                <span>REST API</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-left">
+                        <div class="timeline-content">
+                            <div class="timeline-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3>Web Development Trainee</h3>
+                            <p class="timeline-date">Aug, 2024 - Nov, 2024</p>
+                            <h4>MELTWATER ENTREPRENEURAL SCHOOL OF TECHNOLOGY</h4>
+                            <p class="timeline-description">Intensive training in full-stack web development with focus on MERN stack. Developed multiple projects and collaborated with team members.</p>
+                            <div class="timeline-tags">
+                                <span>MERN Stack</span>
+                                <span>Team Projects</span>
+                                <span>Agile</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     </section>
 
-    <section class="portfolio">
-
+    <section id="education" class="education-section">
+        <div class="container">
+            <div data-aos="fade-up" data-aos-duration="1000">
+                <h2 class="section-title">EDUCATION</h2>
+                <div class="section-subtitle">Academic background</div>
+                <div class="timeline">
+                    <div class="timeline-item" data-aos="fade-right">
+                        <div class="timeline-content">
+                            <div class="timeline-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h3>Web Development Program</h3>
+                            <p class="timeline-date">Aug, 2024 - Nov, 2024</p>
+                            <h4>MELTWATER ENTREPRENEURAL SCHOOL OF TECHNOLOGY</h4>
+                            <p class="timeline-description">Intensive training in full-stack web development with focus on MERN stack. Developed strong skills in JavaScript, React, Node.js, and MongoDB.</p>
+                            <div class="timeline-tags">
+                                <span>MERN Stack</span>
+                                <span>Full Stack Development</span>
+                                <span>Web Technologies</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-left">
+                        <div class="timeline-content">
+                            <div class="timeline-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h3>B.A Geography</h3>
+                            <p class="timeline-date">Aug, 2015 - May, 2019</p>
+                            <h4>UNIVERSITY OF CAPE COAST</h4>
+                            <p class="timeline-description">Studied Geography with focus on spatial analysis and data interpretation. Developed strong analytical and problem-solving skills.</p>
+                            <div class="timeline-tags">
+                                <span>Data Analysis</span>
+                                <span>Research</span>
+                                <span>Problem Solving</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="services">
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div data-aos="fade-up" data-aos-duration="1000">
+                <h2 class="section-title">PROJECTS</h2>
+                <div class="section-subtitle">My recent work</div>
+                <div class="projects-filter">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="frontend">Frontend</button>
+                    <button class="filter-btn" data-filter="backend">Backend</button>
+                    <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card" data-aos="fade-up" data-category="backend">
+                        <div class="project-image">
+                            <img src="./images/portfolio.jpg" alt="Portfolio Website">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/fdblay/fdblay.github.io" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                                    <a href="https://fdblay.github.io" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Portfolio Website</h3>
+                            <p>A modern, responsive portfolio website built with HTML, CSS, and JavaScript. Features dark mode, smooth animations, and interactive elements.</p>
+                            <div class="project-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="project-card" data-aos="fade-up" data-category="backend">
+                        <div class="project-image">
+                            <img src="./images/api.jpg" alt="REST API">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/fdblay/rest-api" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>RESTful API</h3>
+                            <p>A RESTful API built with Express.js and MongoDB. Implements user authentication, CRUD operations, and data validation.</p>
+                            <div class="project-tech">
+                                <span>Node.js</span>
+                                <span>Express.js</span>
+                                <span>MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-aos="fade-up" data-category="fullstack">
+                        <div class="project-image">
+                            <img src="./images/blog.jpg" alt="Blog Platform">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/fdblay/blog-platform" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Blog Platform</h3>
+                            <p>A full-stack blog platform with user authentication, post creation/editing, and commenting system.</p>
+                            <div class="project-tech">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <footer class="end">
-        <div class="contact" id="contact">
-            <div class="call">
-                <a href=""><i class="fa fa-tty" style="font-size:24px; color: #F45722;"></i> </a>
-                <h4>Call Me</h4>
-                <p>+233 54 070 0428 :: +233 27 044 2700</p>
-
-            </div>
-            <div class="email">
-                <a href=""><i class="fa fa-envelope" style="font-size:24px; color: #F45722;"></i> </a>
-                <h4>Email Me</h4>
-                <p>fdblay@gmail.com</p>
-
-            </div>
-            <div class="location">
-                <a href="https://maps.app.goo.gl/X4FsK2UMyuT4JQ9RA" target="_blank"><i class="fa fa-map-marker"
-                        style="font-size:24px; color: #F45722;"></i> </a>
-                <h4>Find Me</h4>
-                <p>Taifa - Accra</p>
-
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div data-aos="fade-up" data-aos-duration="1000">
+                <h2 class="section-title">GET IN TOUCH</h2>
+                <div class="section-subtitle">Let's work together</div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item" data-aos="zoom-in" data-aos-delay="100">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h3>Call Me</h3>
+                                <p>+233 54 070 0428</p>
+                                <p>+233 27 044 2700</p>
+                            </div>
+                        </div>
+                        <div class="contact-item" data-aos="zoom-in" data-aos-delay="200">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email Me</h3>
+                                <p>fdblay@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item" data-aos="zoom-in" data-aos-delay="300">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Location</h3>
+                                <p>Taifa - Accra, Ghana</p>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form" data-aos="fade-up" data-aos-delay="400">
+                        <div class="form-group">
+                            <input type="text" id="name" required>
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" required>
+                            <label for="email">Your Email</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" required>
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            Send Message
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
             </div>
         </div>
+    </section>
 
-        <div class="fafa-icons">
-
-            <a href=""><i class="fa fa-instagram" style="font-size:24px"></i> </a>
-            <a href=""><i class="fa fa-twitter" style="font-size:24px"></i></a>
-            <a href=""><i class="fa fa-facebook" style="font-size:24px"></i></a>
-            <a href=""><i class="fa fa-linkedin" style="font-size:24px"></i></a>
-            <a href=""><i class="fa fa-github" style="font-size:24px"></i></a>
-
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#" class="logo">FK<span class="logo-dot">.</span></a>
+                </div>
+                <div class="social-links">
+                    <a href="https://twitter.com/your-handle" target="_blank" aria-label="Twitter" class="social-hover"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/frederick-kumah" target="_blank" aria-label="LinkedIn" class="social-hover"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/fdblay" target="_blank" aria-label="GitHub" class="social-hover"><i class="fab fa-github"></i></a>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2024 Frederick Kumah. All rights reserved.</p>
+                </div>
+            </div>
         </div>
-        <div class="copyright">
-            <p>&copy; Copyright: 2024</p>
-            <p id="p2">Designed by Frederick</p>
-        </div>
-        
     </footer>
+
+    <button onclick="topFunction()" id="back-to-top" title="Go to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="./scripts.js"></script>
 </body>
 
 </html>
